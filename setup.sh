@@ -12,6 +12,11 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-openjdk" >> ~/.bashrc
 echo "export PATH=\$PATH:\$ANT_HOME/bin" >> ~/.bashrc
 source ~/.bashrc
 
+# Add to normal user's .bashrc
+echo "export ANT_HOME=`pwd`/apache-ant-1.9.9" >> `pwd`/.bashrc
+echo "export JAVA_HOME=/usr/lib/jvm/java-openjdk" >> `pwd`/.bashrc
+echo "export PATH=\$PATH:\$ANT_HOME/bin" >> `pwd`/.bashrc
+
 # Install Ruby and RVM
 # For more info read https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/aws/nginx/oss/install_language_runtime.html
 yum install -y curl gpg gcc gcc-c++ make
