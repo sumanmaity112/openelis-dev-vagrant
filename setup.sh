@@ -3,17 +3,17 @@
 # Install JDK-7
 yum install -y java-1.7.0-openjdk-devel
 
-# Install ant-1.9.9
-wget http://www-eu.apache.org/dist//ant/binaries/apache-ant-1.9.9-bin.tar.gz
-tar -xvzf apache-ant-1.9.9-bin.tar.gz
+# Install ant-1.9.11
+wget http://www-eu.apache.org/dist//ant/binaries/apache-ant-1.9.11-bin.tar.gz
+tar -xvzf apache-ant-1.9.11-bin.tar.gz
 
-echo "export ANT_HOME=`pwd`/apache-ant-1.9.9" >> ~/.bashrc
+echo "export ANT_HOME=`pwd`/apache-ant-1.9.11" >> ~/.bashrc
 echo "export JAVA_HOME=/usr/lib/jvm/java-openjdk" >> ~/.bashrc
 echo "export PATH=\$PATH:\$ANT_HOME/bin" >> ~/.bashrc
 source ~/.bashrc
 
 # Add to normal user's .bashrc
-echo "export ANT_HOME=`pwd`/apache-ant-1.9.9" >> `pwd`/.bashrc
+echo "export ANT_HOME=`pwd`/apache-ant-1.9.11" >> `pwd`/.bashrc
 echo "export JAVA_HOME=/usr/lib/jvm/java-openjdk" >> `pwd`/.bashrc
 echo "export PATH=\$PATH:\$ANT_HOME/bin" >> `pwd`/.bashrc
 
